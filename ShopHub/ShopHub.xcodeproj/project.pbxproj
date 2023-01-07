@@ -16,6 +16,8 @@
 		26D184E6296A220D00C887E8 /* ShopHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D184E5296A220D00C887E8 /* ShopHubTests.swift */; };
 		26D184F0296A220D00C887E8 /* ShopHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D184EF296A220D00C887E8 /* ShopHubUITests.swift */; };
 		26D184F2296A220D00C887E8 /* ShopHubUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D184F1296A220D00C887E8 /* ShopHubUITestsLaunchTests.swift */; };
+		26D18500296A22F800C887E8 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 26D184FF296A22F800C887E8 /* SnapKit */; };
+		26D18503296A234B00C887E8 /* IGListKit in Frameworks */ = {isa = PBXBuildFile; productRef = 26D18502296A234B00C887E8 /* IGListKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26D18500296A22F800C887E8 /* SnapKit in Frameworks */,
+				26D18503296A234B00C887E8 /* IGListKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +147,10 @@
 			dependencies = (
 			);
 			name = ShopHub;
+			packageProductDependencies = (
+				26D184FF296A22F800C887E8 /* SnapKit */,
+				26D18502296A234B00C887E8 /* IGListKit */,
+			);
 			productName = ShopHub;
 			productReference = 26D184CB296A220C00C887E8 /* ShopHub.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,10 @@
 				Base,
 			);
 			mainGroup = 26D184C2296A220C00C887E8;
+			packageReferences = (
+				26D184FE296A22F800C887E8 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				26D18501296A234B00C887E8 /* XCRemoteSwiftPackageReference "IGListKit" */,
+			);
 			productRefGroup = 26D184CC296A220C00C887E8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -366,7 +378,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +432,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -444,6 +456,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,6 +484,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -596,6 +610,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		26D184FE296A22F800C887E8 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		26D18501296A234B00C887E8 /* XCRemoteSwiftPackageReference "IGListKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Instagram/IGListKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		26D184FF296A22F800C887E8 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 26D184FE296A22F800C887E8 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		26D18502296A234B00C887E8 /* IGListKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 26D18501296A234B00C887E8 /* XCRemoteSwiftPackageReference "IGListKit" */;
+			productName = IGListKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 26D184C3296A220C00C887E8 /* Project object */;
 }
