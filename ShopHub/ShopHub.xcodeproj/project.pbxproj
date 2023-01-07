@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		26D184CF296A220C00C887E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D184CE296A220C00C887E8 /* AppDelegate.swift */; };
-		26D184D1296A220C00C887E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D184D0296A220C00C887E8 /* SceneDelegate.swift */; };
 		26D184D3296A220C00C887E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D184D2296A220C00C887E8 /* ViewController.swift */; };
-		26D184D6296A220C00C887E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26D184D4296A220C00C887E8 /* Main.storyboard */; };
 		26D184D8296A220D00C887E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26D184D7296A220D00C887E8 /* Assets.xcassets */; };
 		26D184DB296A220D00C887E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26D184D9296A220D00C887E8 /* LaunchScreen.storyboard */; };
 		26D184E6296A220D00C887E8 /* ShopHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D184E5296A220D00C887E8 /* ShopHubTests.swift */; };
@@ -40,9 +38,7 @@
 /* Begin PBXFileReference section */
 		26D184CB296A220C00C887E8 /* ShopHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26D184CE296A220C00C887E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		26D184D0296A220C00C887E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		26D184D2296A220C00C887E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		26D184D5296A220C00C887E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26D184D7296A220D00C887E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26D184DA296A220D00C887E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26D184DC296A220D00C887E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -104,9 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				26D184CE296A220C00C887E8 /* AppDelegate.swift */,
-				26D184D0296A220C00C887E8 /* SceneDelegate.swift */,
 				26D184D2296A220C00C887E8 /* ViewController.swift */,
-				26D184D4296A220C00C887E8 /* Main.storyboard */,
 				26D184D7296A220D00C887E8 /* Assets.xcassets */,
 				26D184D9296A220D00C887E8 /* LaunchScreen.storyboard */,
 				26D184DC296A220D00C887E8 /* Info.plist */,
@@ -245,7 +239,6 @@
 			files = (
 				26D184DB296A220D00C887E8 /* LaunchScreen.storyboard in Resources */,
 				26D184D8296A220D00C887E8 /* Assets.xcassets in Resources */,
-				26D184D6296A220C00C887E8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +265,6 @@
 			files = (
 				26D184D3296A220C00C887E8 /* ViewController.swift in Sources */,
 				26D184CF296A220C00C887E8 /* AppDelegate.swift in Sources */,
-				26D184D1296A220C00C887E8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,14 +301,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		26D184D4296A220C00C887E8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				26D184D5296A220C00C887E8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		26D184D9296A220D00C887E8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -453,7 +437,6 @@
 				INFOPLIST_FILE = ShopHub/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -481,7 +464,6 @@
 				INFOPLIST_FILE = ShopHub/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
